@@ -72,10 +72,40 @@
             </objects>
             <point key="canvasLocation" x="135.1145038167939" y="3.5211267605633805"/>
         </scene>
+        <!--Settings-->
+        <scene sceneID="c36-qc-gNp">
+            <objects>
+                <viewController id="SuD-GC-OX3" customClass="SettingsVC" customModule="InstagramClone" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="d6K-4D-P4v">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eWO-sv-iIu">
+                                <rect key="frame" x="131" y="346" width="130" height="98"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Logout"/>
+                                <connections>
+                                    <action selector="logoutClicked:" destination="SuD-GC-OX3" eventType="touchUpInside" id="GNa-eW-avi"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="1HR-xP-Z5Q"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Settings" image="moonphase.full.moon.inverse" catalog="system" id="BfP-F4-tw5"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="presentation" identifier="toVC" modalPresentationStyle="fullScreen" id="xuj-kh-zII"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XWP-SF-rs9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3077" y="5"/>
+        </scene>
         <!--Upload-->
         <scene sceneID="PRX-YU-Og6">
             <objects>
-                <viewController id="iHV-ad-7ce" sceneMemberID="viewController">
+                <viewController id="iHV-ad-7ce" customClass="UploadVC" customModule="InstagramClone" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="48K-Wc-hsO">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -86,23 +116,38 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PLB-et-1o6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1891" y="307"/>
+            <point key="canvasLocation" x="1891" y="358"/>
         </scene>
         <!--Feed-->
         <scene sceneID="IXm-mQ-qsF">
             <objects>
-                <viewController id="6K6-Jg-JUg" sceneMemberID="viewController">
+                <viewController id="6K6-Jg-JUg" customClass="FeedVC" customModule="InstagramClone" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="19m-fe-F1m">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="RGm-jp-bhi">
+                                <rect key="frame" x="0.0" y="59" width="393" height="710"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="nWk-8a-qat"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="nWk-8a-qat" firstAttribute="bottom" secondItem="RGm-jp-bhi" secondAttribute="bottom" id="5xk-i4-Xcd"/>
+                            <constraint firstItem="RGm-jp-bhi" firstAttribute="leading" secondItem="nWk-8a-qat" secondAttribute="leading" id="F3g-1S-Peq"/>
+                            <constraint firstItem="nWk-8a-qat" firstAttribute="trailing" secondItem="RGm-jp-bhi" secondAttribute="trailing" id="aML-Wz-be5"/>
+                            <constraint firstItem="RGm-jp-bhi" firstAttribute="top" secondItem="nWk-8a-qat" secondAttribute="top" id="aqx-42-Csg"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Feed" image="moonphase.new.moon" catalog="system" id="LDy-Gk-qu6"/>
+                    <connections>
+                        <outlet property="tableView" destination="RGm-jp-bhi" id="opF-1L-fcC"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="slY-RE-DAi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1891" y="-299"/>
+            <point key="canvasLocation" x="1891" y="-316"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="4Ht-DY-SMt">
@@ -117,6 +162,7 @@
                     <connections>
                         <segue destination="6K6-Jg-JUg" kind="relationship" relationship="viewControllers" id="nWq-SB-YhT"/>
                         <segue destination="iHV-ad-7ce" kind="relationship" relationship="viewControllers" id="IB4-7B-HlX"/>
+                        <segue destination="SuD-GC-OX3" kind="relationship" relationship="viewControllers" id="j66-hb-HiA"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sk2-aa-cdi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -125,6 +171,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="moonphase.full.moon.inverse" catalog="system" width="128" height="123"/>
         <image name="moonphase.new.moon" catalog="system" width="128" height="123"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
