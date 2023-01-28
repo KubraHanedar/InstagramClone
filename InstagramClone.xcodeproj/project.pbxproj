@@ -145,7 +145,6 @@
 				010B63B18CAA6FFAFF736371 /* Pods-InstagramClone.debug.xcconfig */,
 				E2D82A78A4A8396CF98B4551 /* Pods-InstagramClone.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
