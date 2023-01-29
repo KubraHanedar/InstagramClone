@@ -128,14 +128,14 @@
 				4133FBE929856ADA008A9118 /* AppDelegate.swift */,
 				4133FBEB29856ADA008A9118 /* SceneDelegate.swift */,
 				4133FBED29856ADA008A9118 /* ViewController.swift */,
+				414A4B832985A9DF00E7CC1B /* FeedVC.swift */,
+				414A4B7F2985A98100E7CC1B /* UploadVC.swift */,
+				414A4B812985A9A200E7CC1B /* SettingsVC.swift */,
 				4133FBEF29856ADA008A9118 /* Main.storyboard */,
 				4133FBF229856ADB008A9118 /* Assets.xcassets */,
 				4133FBF429856ADB008A9118 /* LaunchScreen.storyboard */,
 				4133FBF729856ADB008A9118 /* Info.plist */,
 				4133FBFD29857236008A9118 /* GoogleService-Info.plist */,
-				414A4B7F2985A98100E7CC1B /* UploadVC.swift */,
-				414A4B812985A9A200E7CC1B /* SettingsVC.swift */,
-				414A4B832985A9DF00E7CC1B /* FeedVC.swift */,
 			);
 			path = InstagramClone;
 			sourceTree = "<group>";
