@@ -8,6 +8,11 @@
 import UIKit
 
 class UploadVC: UIViewController {
+    
+    @IBOutlet weak var imageView: UIImageView!
+    @IBOutlet weak var commentText: UITextField!
+    @IBOutlet weak var uploadButton: UIButton!
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -16,6 +21,8 @@ class UploadVC: UIViewController {
     }
     
 
+    @IBAction func actionButtonClicked(_ sender: Any) {
+    }
     
 
 }

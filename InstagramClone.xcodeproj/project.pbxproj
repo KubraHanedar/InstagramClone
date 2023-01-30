@@ -41,6 +41,7 @@
 		4133FC31298572BB008A9118 /* FirebaseRemoteConfigSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 4133FC30298572BB008A9118 /* FirebaseRemoteConfigSwift */; };
 		4133FC33298572BB008A9118 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 4133FC32298572BB008A9118 /* FirebaseStorage */; };
 		4133FC35298572BB008A9118 /* FirebaseStorageCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = 4133FC34298572BB008A9118 /* FirebaseStorageCombine-Community */; };
+		413B1D9729885532008D1954 /* deneme.png in Resources */ = {isa = PBXBuildFile; fileRef = 413B1D9629885532008D1954 /* deneme.png */; };
 		414A4B802985A98100E7CC1B /* UploadVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414A4B7F2985A98100E7CC1B /* UploadVC.swift */; };
 		414A4B822985A9A200E7CC1B /* SettingsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414A4B812985A9A200E7CC1B /* SettingsVC.swift */; };
 		414A4B842985A9DF00E7CC1B /* FeedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414A4B832985A9DF00E7CC1B /* FeedVC.swift */; };
@@ -58,6 +59,7 @@
 		4133FBF529856ADB008A9118 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4133FBF729856ADB008A9118 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4133FBFD29857236008A9118 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		413B1D9629885532008D1954 /* deneme.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = deneme.png; sourceTree = "<group>"; };
 		414A4B7F2985A98100E7CC1B /* UploadVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadVC.swift; sourceTree = "<group>"; };
 		414A4B812985A9A200E7CC1B /* SettingsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsVC.swift; sourceTree = "<group>"; };
 		414A4B832985A9DF00E7CC1B /* FeedVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedVC.swift; sourceTree = "<group>"; };
@@ -125,6 +127,7 @@
 		4133FBE829856ADA008A9118 /* InstagramClone */ = {
 			isa = PBXGroup;
 			children = (
+				413B1D9629885532008D1954 /* deneme.png */,
 				4133FBE929856ADA008A9118 /* AppDelegate.swift */,
 				4133FBEB29856ADA008A9118 /* SceneDelegate.swift */,
 				4133FBED29856ADA008A9118 /* ViewController.swift */,
@@ -252,6 +255,7 @@
 				4133FBF629856ADB008A9118 /* LaunchScreen.storyboard in Resources */,
 				4133FBFE29857236008A9118 /* GoogleService-Info.plist in Resources */,
 				4133FBF329856ADB008A9118 /* Assets.xcassets in Resources */,
+				413B1D9729885532008D1954 /* deneme.png in Resources */,
 				4133FBF129856ADA008A9118 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

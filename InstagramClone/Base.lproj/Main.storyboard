@@ -109,14 +109,55 @@
                     <view key="view" contentMode="scaleToFill" id="48K-Wc-hsO">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="deneme.png" translatesAutoresizingMaskIntoConstraints="NO" id="82Y-Mt-anN">
+                                <rect key="frame" x="62" y="123" width="268" height="279"/>
+                            </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="comment" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hui-O9-u65">
+                                <rect key="frame" x="62" y="450" width="268" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="iKn-Rp-eVN"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Zb-X8-hyn">
+                                <rect key="frame" x="153" y="541" width="87" height="83"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="83" id="huH-ob-Ihb"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Save"/>
+                                <connections>
+                                    <action selector="actionButtonClicked:" destination="iHV-ad-7ce" eventType="touchUpInside" id="AVs-Wg-kfR"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="jaT-rj-3WQ"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="82Y-Mt-anN" firstAttribute="trailing" secondItem="hui-O9-u65" secondAttribute="trailing" id="1Pv-dj-E35"/>
+                            <constraint firstItem="1Zb-X8-hyn" firstAttribute="top" secondItem="hui-O9-u65" secondAttribute="bottom" constant="57" id="7UC-sD-npl"/>
+                            <constraint firstItem="82Y-Mt-anN" firstAttribute="top" secondItem="jaT-rj-3WQ" secondAttribute="top" constant="64" id="7uH-zy-9Jz"/>
+                            <constraint firstItem="hui-O9-u65" firstAttribute="top" secondItem="82Y-Mt-anN" secondAttribute="bottom" constant="48" id="8FS-gj-89E"/>
+                            <constraint firstItem="hui-O9-u65" firstAttribute="centerX" secondItem="1Zb-X8-hyn" secondAttribute="centerX" id="RM1-EV-Bvh"/>
+                            <constraint firstItem="82Y-Mt-anN" firstAttribute="centerX" secondItem="48K-Wc-hsO" secondAttribute="centerX" id="WaA-t8-GBI"/>
+                            <constraint firstItem="82Y-Mt-anN" firstAttribute="leading" secondItem="jaT-rj-3WQ" secondAttribute="leading" constant="62" id="cAt-eC-HjH"/>
+                            <constraint firstItem="jaT-rj-3WQ" firstAttribute="bottom" secondItem="1Zb-X8-hyn" secondAttribute="bottom" constant="145" id="dCG-uH-iBG"/>
+                            <constraint firstItem="82Y-Mt-anN" firstAttribute="leading" secondItem="hui-O9-u65" secondAttribute="leading" id="ed1-Ud-8SH"/>
+                            <constraint firstItem="1Zb-X8-hyn" firstAttribute="leading" secondItem="jaT-rj-3WQ" secondAttribute="leading" constant="153" id="lu6-K1-OzT"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Upload" image="moonphase.new.moon" catalog="system" id="1lw-Gm-ImE"/>
+                    <connections>
+                        <outlet property="commentText" destination="hui-O9-u65" id="QDi-Cv-b9r"/>
+                        <outlet property="imageView" destination="82Y-Mt-anN" id="YZu-y0-CVZ"/>
+                        <outlet property="uploadButton" destination="1Zb-X8-hyn" id="NL8-bs-jCp"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PLB-et-1o6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1891" y="358"/>
+            <point key="canvasLocation" x="1890.8396946564885" y="357.74647887323948"/>
         </scene>
         <!--Feed-->
         <scene sceneID="IXm-mQ-qsF">
@@ -171,6 +212,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="deneme.png" width="384" height="384"/>
         <image name="moonphase.full.moon.inverse" catalog="system" width="128" height="123"/>
         <image name="moonphase.new.moon" catalog="system" width="128" height="123"/>
         <systemColor name="systemBackgroundColor">
